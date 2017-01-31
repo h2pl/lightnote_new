@@ -1,0 +1,9 @@
+.nav_menu_bar{float:left; width:100%; margin:0 0 25px 0; line-height:25px; border:1px solid #FFF; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; background:url(/static/images/index/bg_menu_bar.png) repeat-x}
+.nav_menu_bar ul{width:100%; margin:0; line-height:25px; list-style:none}
+.nav_menu_bar ul li{display:table-cell; width:192px; text-align:center; border-left:1px solid #FFF; border-right:1px solid #B4B4B4}
+.nav_menu_bar ul li.home{border-left:none}
+.nav_menu_bar ul li.last{border-right:none}
+.nav_menu_bar ul li a{width:100%; text-align:center; text-decoration:none; font-weight:bold; cursor:pointer; color:#000}
+.nav_menu_bar ul li a.current{color:#FFF; border-left:none}
+.nav_menu_bar ul li a:hover{color:#FFF}
+.nav_menu_bar ul li a.current, .nav_menu_bar ul li a:hover{padding:8px 50px; background:url(/static/images/index/bg_hover_light.png) no-repeat center}

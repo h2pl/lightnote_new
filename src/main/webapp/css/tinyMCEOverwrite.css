@@ -1,0 +1,8 @@
+img{
+	max-width:630px;
+	_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<630?"630px":"");overflow:hidden;
+}
+p{
+	margin:0px;
+	word-break:break-all;
+}

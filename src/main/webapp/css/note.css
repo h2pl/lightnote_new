@@ -1,0 +1,103 @@
+body{background:#f2f2f2;}
+.noteTitle{text-align:center;margin-left:210px;line-height:45px;width:550px;}
+.alertDiv{width:170px;float:right;text-align:center;color:#222222;}
+.timeShow{float:left;width:100%;}
+.timeShow .info{width:600px;float:left;overflow:hidden;}
+.tag{float:left;width:520px;margin-top:3px;}
+.disBreadNav{float:left;color:white;height:52px;line-height:52px;font-size:14px;}
+.disBreadNav a{color:white;}
+.closePage{background:url("/static/images/newNote_v1/gb.jpg") no-repeat 0px 10px;text-align:right;width:60px;display:block;}
+.BT_R{
+	float:right;
+	background:white;
+	display:inline-block;
+	height:33px;
+	line-height:32px;
+	width:130px;
+	text-align:center;
+	border:1px solid #ddd;
+	border-right:none;
+	background:-webkit-linear-gradient(top,#fff,#ececec);
+	background:-moz-linear-gradient(top,#fff,#ececec);
+	text-decoration:none;
+}
+.BT_R:hover{
+	background:-webkit-linear-gradient(top,#fff,#ddd);
+	background:-moz-linear-gradient(top,#fff,#ddd);
+	text-decoration:none;
+}
+.rBorder{border:1px solid #ddd;border-top-right-radius:20px;border-bottom-right-radius:20px;}
+.upFileDiv{width:300px;min-height:130px;background:white;border:1px solid #dddddd;border-radius:10px;position:absolute;top:200px;left:512px;padding:20px;z-index:999999999;}
+.fileList{list-style:none;}
+	border: 1px solid;
+.BT_close{float:right;margin-bottom:0px;margin-top:50px;}
+.userName{background:url("/static/images/newNote_v1/userHead.jpg") no-repeat 0 3px; padding-left:10px;}
+.infoBox{background:#e7e7e7;padding-left:10px;width:940px;height:35px;margin-top:25px;line-height:35px;border-radius:20px;overflow:hidden;border-bottom:1px solid white;}
+
+.modTitle{margin:20px 0 20px 5px;}
+.tinyDiv{float:left;width:100%;min-height:550px;}
+#content{min-height:580px;}
+.commentChild .headImg .img{
+	width: 64px;
+	height: 54px;
+	background:url('/static/images/newNote_v1/head001.png') no-repeat -6px 0;
+	}
+.commentChild{
+	width:100%;
+
+}
+.commentChild .headImg{
+	width:80px;
+	height:100px;
+}
+.commentChild .headImg .img{
+	width: 64px;
+	height: 54px;
+	background:url('/static/images/newNote_v1/head001.png') no-repeat -6px 0;
+}
+.commentChild .info{
+	width:838px;
+}
+.commentChild .info .title{
+	margin-top:6px;
+	width:100%;
+	background:#dfd4c3;
+}
+.commentChild .username{color:#336699;}
+.commentChild .time{color:#787878;}
+.commentChild .info .title span{
+	height:30px;
+	line-height:30px;
+	padding:0 10px 0 10px;
+}
+.commentChild .info .content{
+	padding: 10px;
+	width: 520px;
+	text-indent:2em;
+	word-wrap:break-word;
+}
+.comment{width:938px;float:left;margin-top:10px;}
+.comment .list{}
+.comment .list .title{line-height:20px;padding-left:20px;background:#e5e5e5;}
+.comment .list .content{ padding:5px 20px 10px 20px;}
+.comment .subDiv{width:936;text-align:center;background:#e5e5e5;border:1px solid #c2c2c2;padding:30px 0 30px 0;}
+.comment textarea{
+	width:80%;
+	margin:0 auto;
+	height:18px;
+	-webkit-appearance:textarea;
+	background-color:white;
+	border-image: initial;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	-webkit-box-orient: vertical;
+	resize: auto;
+	cursor: auto;
+	padding: 2px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.fl{float:left;}
+/*
+.comment .commentChild{}
+*/

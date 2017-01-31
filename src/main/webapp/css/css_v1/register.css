@@ -1,0 +1,97 @@
+.contentBox{
+	padding-top:90px;
+	padding-bottom:150px;
+	height:auto;
+}
+.main{
+	border:1px solid #a3a3a3;
+	width:600px;
+	background:#f4f4f4;
+	padding-bottom:50px;	
+}
+.main .imgTitle{
+	width:100%;
+	height:40px;
+	text-align:center;
+	margin-bottom:20px;
+}
+.main .imgTitle a{
+	text-align:center;
+	color:white;
+}
+.main form{
+	width:235px;
+}
+.main .liMid{
+	margin-top:10px;
+	font-size:12px;
+	margin-bottom:10px;
+}
+.main .bt{
+	width:180px;
+	margin-left:30px;
+	height:30px;
+	line-height:30px;
+}
+.main .rg{
+	margin-top:10px;
+	margin-left:90px;
+}
+.main .bt a{
+	height:30px;
+	line-height:30px;
+}
+.main .separator{
+	display:block;
+	width:250px;
+	height:5px;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.main .imgTitle{
+	width:100%;
+	height:40px;
+	text-align:center;
+	margin-bottom:20px;
+}
+.main .imgTitle a{
+	text-align:center;
+	color:white;
+}
+.main form{
+	width:285px;
+}
+.main .ipt{
+	width:225px;
+	height:43px;
+	line-height:43px;
+	margin-top:2px;
+	border:1px solid #ddd;
+}
+.usage span{
+	float:left;
+	line-height:43px;
+	width:50px;
+	display:block;
+}
+.main .ipt-vcode{
+	width:40%;
+}
+.main .bt{
+	width:80px;
+	height:30px;
+	line-height:30px;
+}
+.main .bt a{
+	height:30px;
+	line-height:30px;
+}
+.main .agreement{
+	margin-top:20px;
+	font-size:12px;
+	margin-bottom:20px;
+}
+.main form img{
+	vertical-align:middle;
+}

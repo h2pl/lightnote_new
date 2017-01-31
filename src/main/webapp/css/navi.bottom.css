@@ -1,0 +1,5 @@
+.nav_links{float:left; margin:10px 0 0 0}
+.nav_links ul{list-style:none}
+.nav_links ul li{list-style:none; display:inline; }
+.nav_links ul li a{padding-right:15px; text-decoration:none; color:#FFF}
+.nav_links ul li a:hover{text-decoration:underline}

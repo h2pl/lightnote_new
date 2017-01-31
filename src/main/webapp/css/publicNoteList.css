@@ -1,0 +1,226 @@
+.box{
+	margin:0 auto;
+	overflow:auto;
+}
+.fl{float:left;}
+#logoImg{margin-left:20px;}
+.PubNoteBox{
+	width:235px;
+	height:235px;
+	overflow:hidden;
+	float:left;
+	margin-left:15px;
+	margin-top:15px;
+	display:inline;
+	background:white;
+	position:relative;
+	display:inline;
+	border-radius: 5px;
+}
+.PubNoteBox .slt{
+	display: inline-block;
+	margin:5px 0 0 5px;
+	width: 225px;
+	border: none;
+	float:left;
+	overflow:hidden;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	behavior:url(/static/css/ie-css3.htc);
+}
+.PubNoteBox .slt1{
+	height:0px;
+}
+.PubNoteBox .slt2{
+	height: 115px;
+}
+.PubNoteBox .slt3{
+	height: 170px;
+}
+.PubNoteBox .headImg{
+	display:none;
+	position: absolute;
+	left: 175px;
+	z-index:9;
+}
+.PubNoteBox .headImg1{
+	top: 15px;
+}
+.PubNoteBox .headImg2{
+	top: 92px;
+}
+.PubNoteBox .headImg3{
+	top: 135px;
+}
+.PubStyle1{
+	background:red;
+}
+.PubStyle1 .slt{
+	height:20px;
+}
+.PubStyle1 .headImag{
+	top:15px;
+}
+.PubStyle1 .info{
+	height:140px;
+}
+
+.PubNoteBox .title{
+	font-size:14px;
+	width: 140px;
+	height: 20px;
+	float: left;
+	margin: 0px;
+	padding-left:10px;
+	color:black;
+}
+.PubNoteBox .title1{
+	margin-top:0px;
+}
+.PubNoteBox .title2{
+	margin-top:20px;
+}
+
+.PubNoteBox .info{
+	float: left;
+	text-indent:2em;
+	text-align:left;
+	padding:5px 10px 0px 10px;
+	width: 215px;
+	overflow:hidden;
+	word-wrap:break-word;
+	color:#535353;
+}
+.PubNoteBox .info1{
+	height: 0px;
+}
+.PubNoteBox .info2{
+	height: 55px;
+}
+.PubNoteBox .info3{
+	height:149px;
+}
+
+.PubNoteBox .userName{
+	float: left;
+	padding-left:10px;
+	width: 80px;
+	height: 21px;
+}
+.PubNoteBox .comment,.collect{
+	float: right;
+	margin-right:10px;
+	height: 20px;
+	padding-left:20px;
+	color:#535353;
+}
+.PubNoteBox .comment{
+	background: url("../images/newNote_v1/comment001.png") no-repeat;
+}
+.PubNoteBox .collect{
+	background: url("../images/newNote_v1/collect001.png") no-repeat;
+}
+
+.PubNoteBox .lock{
+	width:86px;
+	height:86px;
+	position:absolute;
+	left:75px;
+	top:75px;
+	background: url("../images/newNote_v1/shareNoteBg2.png") no-repeat;
+}
+
+
+.myNoteBox{
+	width:178px;
+	height:182px;
+	overflow:hidden;
+	float:left;
+	margin-left:8px;
+	margin-top:15px;
+	display:inline;
+	background:url("../images/newNote_v1/myNote_001.png");
+	border-radius: 5px;
+}
+.myNoteBox .remove{
+	margin:15px 10px 0 0;
+	float:right;
+	width:16px;
+	height:16px;
+	background:url("../images/newNote_v1/myNote_close001.png");
+}
+.myNoteBox .remove:hover{
+	background-position:-16px;
+}
+.myNoteBox .slt{
+	display: inline-block;
+	margin:3px 0 0 2px;
+	width: 175px;
+	border: none;
+	float:left;
+	overflow:hidden;
+	behavior:url(/static/css/ie-css3.htc);
+}
+.myNoteBox .slt1{
+	height:0px;
+}
+.myNoteBox .slt2{
+	height:80px;
+}
+.myNoteBox .slt3{
+	height:115px;
+}
+.myNoteBox .titleBox{
+	float:left;
+	width:100%;
+	margin-top:3px;
+}
+.myNoteBox .title{
+	font-size:14px;
+	width:90px;
+	height: 20px;
+	float: left;
+	padding-left:3px;
+	color:black;
+}
+
+.myNoteBox .info{
+	float: left;
+	text-indent:2em;
+	text-align:left;
+	padding:5px 10px 0px 10px;
+	width: 155px;
+	height: 55px;
+	overflow:hidden;
+	word-wrap:break-word;
+	color:#535353;
+}
+.myNoteBox .info1{
+	height:0px;
+}
+.myNoteBox .info2{
+	height:35px;
+}
+.myNoteBox .info3{
+	height:105px;
+}
+.myNoteBox .createTime{
+	float: left;
+	padding-left:5px;
+	width: 80px
+}
+
+.newNoteButton{
+	margin-top:20px;
+	width:178px;
+	height:176px;
+	background:url('../images/newNote_v1/newNote.png');
+}
+.newNoteButton:hover{
+	background-position:-179px 0px;
+}
+
+
+		
+
+

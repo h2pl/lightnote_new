@@ -1,0 +1,56 @@
+*{font-family: Microsoft YaHei, Verdana, Helvetica, Arial, sans-serif;}
+#conten{width:980px;}
+.radiu{-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.unit{height:100%;width:680px;float:left;overflow:hidden;}
+.unit .privateModel{height:249px;width:677px;float:left;background:#EAF5F9;border:1px solid #ddd;}
+.unit .title{width:100%;height:30px;float:left;padding:10px;}
+.unit .title .tit{width:96%;height:20px;float:left;border-bottom:1px solid #ddd;}
+.unit .title .tit img{margin-left:20px;margin-right:10px;float:left;width:16px;height:16px;}
+.unit .conBox{width:100%;margin-top:50px;float:left;}
+.unit .conBox .BT_big{margin-left:37px;width:260px;height:50px;float:left;display:inline;}
+.unit .conBox .imgBox{width:50px;padding-top:5px;height:100%;float:left;}
+.unit .conBox .txt{font-size:18px;color:#1880c9;float:left;height:15px;margin-top:3px;}
+.unit .conBox .introduce{color:#909090;float:left;width:200px;text-align:left;margin-top:9px;}
+
+.unit .publicModel{margin-top:30px;float:left;width:677px;margin-bottom:40px;border:1px solid #ddd;padding-bottom:30px;background:#fafafa;}
+.unit .publicModel .conBox{margin-top:0px;}
+.unit .publicModel .qyBox{float:left;width:100%;}
+.unit .publicModel .qyBox p{float:left;margin-top:20px;line-height:20px;}
+.unit .publicModel .qyBox img{float:left;margin:10px 0 0 30px;}
+.unit .publicModel .qyBox .tit{width:380px;}
+
+.sideBar{width:240px;border-left:1px solid #ddd;margin-left:10px;display:inline;float:left;padding-bottom:30px;}
+.sideBar p{float:left;width:100%;margin-top:10px;}
+.sideBar .title{border-bottom:1px solid #ddd;width:220px;margin-bottom:5px;float:left;}
+.sideBar .userInfo{float:left;padding:10px;width:100%;}
+.sideBar .userInfo .userIcon{float:left;margin-right:3px;}
+.sideBar .userInfo .userName{display:block;width:80px;float:left;}
+.sideBar .userInfo .emailIcon{padding-top:2px;float:left;}
+#spaceTool{float:left;height:10px;width:220px;background:#eaeaea;overflow:hidden;} 
+#space{float:left;height:100%;width:90px;background:#7ad439;} 
+.sideBar .userInfo .yz,.mm{margin:0 5px 0 5px;}
+
+.sideBar .trends{float:left;padding:10px;width:100%;}
+.sideBar .trends ul{margin-left:30px;float:left;margin-left:0;padding-left:10px;font-size:12px;width:90%;}
+.sideBar .trends li{width:90%;margin-top:10px;}
+
+.sideBar .download{float:left;padding:10px;width:100%;}
+.sideBar .download ul{list-style:none;float:left;margin:20px 0 0 0px;width:100%;}
+.sideBar .download li{float:left;margin-left:5px;text-align:center;width:70px;display:inline;}
+.sideBar .download li span{float:left;}
+#conten{}
+#Div_dashboard{margin-top:30px;float:left;}
+.dwn1{
+	width:40px;
+	height:40px;
+	overflow:hidden;
+	background:url("/static/images/index/gailan/download_android3.png") no-repeat 0px -40px;
+	display:block;
+}
+.d1:hover .dwn1{
+	background-position:0px 0px;
+}
+.dwn2{width:40px;height:40px;background:url("/static/images/index/gailan/download_apple3.png") no-repeat 0px -40px;display:block;}
+.d2:hover .dwn2{background-position:0px 0px;}
+.dwn3{width:40px;height:40px;background:url("/static/images/index/gailan/download_pc3.png") no-repeat 0px -40px;display:block;}
+.d3:hover .dwn3{background-position:0px 0px;}

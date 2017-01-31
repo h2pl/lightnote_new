@@ -1,0 +1,100 @@
+.Div_playTitle{text-align:right;width:100%;}
+#Div_list{float:left;width:259px;height:100%;overflow:auto;overflow:hidden;border-right:1px solid #ddd;}
+#Div_detail{float:left;height:100%;overflow:hidden;border:1px solid white;}
+#Div_Name{height:100%;overflow:auto;}
+.setMark{overflow:hidden;float:left;position:absolute;z-index:999;top:200px;left:-302px;}
+.setTab{width:300px;background:white;height:200px;float:left;border:1px solid #ddd;}
+.markname{width:20px;border:1px solid #ddd;border-left:none;float:left;margin-left:-1px;background:white;font-size:14px;line-height:30px;padding:5px;}
+#Div_listShow{float:left;width:668px;overflow:hidden;display:inline;}
+.cuted{filter:alpha(opacity=50);opacity:0.5;opacity:0.5;}
+/*home.html CSS*/
+.li_userSet{background:url("../images/home/setting_icon.png") no-repeat;padding-left:10px;}
+.li_logOut{background:url("../images/home/log_out_16.png") no-repeat;padding-left:10px;}
+
+/*Mod>Css*/
+.ListBox{overflow:hidden;height:100%;background:white;}
+.ListBox .LBChild{height:100%;white-space:nowrap;}
+
+.CList{display:inline-block;vertical-align:top;height:100%;position:relative;}
+.CList .BTtool{width:100%;height:30px;overflow:hidden;border-bottom:1px solid #dddddd;padding-bottom:5px;}
+.CList .BT_new{float:left;margin-left:5px;}
+.CList .typeDiv{float:left;width:100px;margin-left:5px;width:50px;padding:5px 0 5px 5px;border:1px solid #ddd;cursor:pointer;}
+.CList .typeDiv img{width:16px;height:16px;}
+.CList .CLChild{background:white;padding-top:0px;overflow-y:scroll;position:relative;float:left;}
+.CList .T_iconAdd{vertical-align:-2px;}
+.CList .newNote_a{float:left;width:100%;height:100%;text-shadow:0 1px rgba(0, 0, 0, 0.4);font-weight:bold;}
+.CList .icon_back{width:16px;height:16px;float:left;}
+
+.Li{width:100%;height:45px;margin:0 auto;background:white;cursor:pointer;float:left;border-top:1px solid white;display:block;text-decoration:none;border-bottom:1px solid #eaeaea;padding-top:5px;padding-bottom:10px;position:relative;}
+.Owner1{border-left:1px solid blue;}
+.Owner2{border-left:1px solid red;}
+.liSelected{background:#eaf5f9;}
+.Li:hover{background:#eaf5f9;text-decoration:none;}
+.Li .icon{margin:8px 0 0 5px;float:left;}
+.Li .upCount{padding:0px;margin-top:17px;float:left;margin-left:3px;width:16px;}
+.Li .countDiv{background:red;float:left;width:16px;text-align:center;color:white;font-size:8px;}
+.Li .InpRename{width:160px;margin-top:3px;margin-left:3px;float:left;}
+.Li .sname1,.Li .sname2{float:left;margin-top:5px;line-height:30px;padding-left:8px;font-size:14.7px;color:#3a3a3a;}
+.Li .sname1{width:140px;}
+.Li .sname2{width:416px;}
+.Li .noteName{margin-top:5px;line-height:20px;float:left;}
+.Li .titleSpan{width:550px;float: left;}
+.Li .summary{width:550px;float: left;height:20px;color:black;padding-left:9px;}
+.Li .summary a{margin-right:10px;}
+.Li .imgFolder,.Li .imgNote,.imgUser{padding-left:16px;}
+.Li .imgFolder{background:url("../images/home/new/folder.png") no-repeat;}
+.Li .imgNote{background:url("../images/home/new/note.png") no-repeat;}
+.Li .imgUser{background:url("../images/home/new/user.png") no-repeat;}
+.Li .isPub{position: absolute;width: 20px;height: 20px;background:url('../images/newNote_v1/notePubliced.png');top: 32px;left: 20px;}
+.Li .creatorSpan{color:#3a3a3a;margin-left:10px; width:100px;float:left;}
+.Li .info1,.Li .info{float:left;font-size:12px;width:200px;font-family:"宋体";color:#bbb;}
+.Li .info1{margin-top:5px;}
+.Li .downIcon{position:absolute;top:6px;right:20px;width:16px;margin-top:15px;height:16px;background:url("../images/icon_class.png") -128px -32px;}
+.Li .downIcon:hover{background-position:-128px 0px}
+
+.NoteShow{margin-left:5px;}
+.NoteShow .title{text-align:right;}
+
+.upFileDiv{ width:300px;min-height:180px;background:white;border:1px solid #dddddd;position:absolute;top:300px;left:512px;padding:20px;}
+.fileList{list-style:none;}
+
+#content { height: 1000px;overflow:hidden; }
+.NewCreatDiv{border:1px solid #ddd;}
+.NewCreatDiv .title{width:100%;height:25px;line-height:25px;background:#eaeaea;}
+.NewCreatDiv {width:100%;height:950px;background:white;padding-left:20px;padding-top:30px;}
+.NewCreatDiv  .inpText{width:150px;margin-left:5px;}
+.NewCreatDiv .BTtool{width:100%;padding-left:80px;background:white;}
+.NewCreatDiv input[type="button"]{margin-left:10px;width:80px;}
+
+.RMenu{padding:10px 0 0px 0;background:white;border:1px solid #dddddd;position:absolute;z-index:999;}
+.RMenu ul{float:left;margin-left:0;list-style:none;height:100%;width:100%;}
+.RMenu li{height:30px;padding:0 10px 0 10px;line-height:30px;}
+.RMenu li .name{margin-left:5px;}
+.RMenu li:hover{background:#eaeaea;}
+
+.Comment{width:99%;background:white;border:1px solid #ddd;float:left;}
+.Comment .sonDiv{width:100%;margin-top:30px;float:left;}
+.Comment .title{width:100%;background:#eaeaea;height:20px;}
+.Comment .userName{float:left;margin-left:10px;}
+.Comment .sonContent{width:640px;min-height:20px;overflow:hidden;white-space:normal;padding:20px;float:left;}
+.Comment textarea{width:90%;height:200px;float:left;}
+.Comment input{float:left;}
+
+
+.jonDiv li{margin-top:10px; }
+.infoSpan{
+	display:block;
+	width:280px;
+	height:280px;
+	margin:50px auto;
+}
+.nothing{
+	background:url('../images/newNote_v1/nothing.png');
+}
+.noTrash{
+	background:url('../images/newNote_v1/noTrash.png');
+}
+.noSearch{
+	background:url('../images/newNote_v1/noSearch.png');
+}
+

@@ -17,6 +17,7 @@
 	<!-- 静态资源 -->
 	<mvc:resources location="/images/" mapping="/images/**"/>
 	<mvc:resources location="/js/" mapping="/js/**"/>
+	<mvc:resources location="/css/" mapping="/css/**"/>
 	<!-- 拦截器 -->
 	<!-- <mvc:interceptors></mvc:interceptors> -->
 	<!-- 自动扫描的包，使Spring支持自动检测组件，如注解的Controller -->

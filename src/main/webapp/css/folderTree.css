@@ -1,0 +1,5 @@
+.folderTree{}
+.folderTree .open{background:url("../images/folderTree/folder-open.gif") no-repeat scroll 0 50% transparent;width:35px;height:16px;float:left;}
+.folderTree .closed{background:url("../images/folderTree/folder-closed.gif") no-repeat scroll 0 50% transparent;width:35px;height:16px;float:left;}
+.folderTree .selected{background:#ddd;}
+

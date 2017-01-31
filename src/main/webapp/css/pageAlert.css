@@ -1,0 +1,35 @@
+*,p,img{margin:0;padding:0;}
+.PageAlert_layer{
+	position:absolute;
+	z-index:999;
+}
+.PageAlert_box{
+	float:left;
+	width:100px;
+	background:#feffbe;
+	border:1px solid #f79f37;
+	border-radius:5px;
+	color:black;
+	overflow:hidden;
+}
+.PageAlert_layer .angle{
+	width:10px;
+	height:10px;
+	position:absolute;
+	background-repeat:no-repeat;
+}
+.PageAlert_box .content{
+	margin:0;
+  padding:3px;	
+  width:60px;
+  float:left;
+  color:#D87500;
+}
+.PageAlert_box .closeBT{
+	float:right;
+	width:20px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	color:#462e03;
+}
