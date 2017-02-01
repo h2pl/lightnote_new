@@ -21,7 +21,7 @@
 		select * from user where id = #{id}
 	</select>
 	
-	<resultMap type="User" id="userMap">
+	<resultMap type="com.ruanku.lightnote.pojo.User" id="User">
 		<id column="id" property="id"/>
 		<result column="username" property="username"/>
 		<result column="password" property="password"/>
@@ -29,8 +29,12 @@
 		<!-- <association property="" column=""></association> -->
 	</resultMap>
 	
-	<select id="findAll" resultMap="userMap">
+	<select id="findAll" resultMap="User">
 		select * from user
+	</select>
+	
+	<select id="findUserByName" parameterType="String" resultMap="User">
+		select * from user where username = #{username}
 	</select>
 	
 </mapper>

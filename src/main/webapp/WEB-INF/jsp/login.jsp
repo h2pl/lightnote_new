@@ -58,7 +58,7 @@
                                         <div class="titleBar1 imgTitle">
                                                 <a>登录并开始记录</a>
                                         </div>
-                                        <form class="center" id="form_login" method="post" action="/lightnote/user/login">
+                                        <form class="center" id="form_login" method="post" action="/login">
                                                 <input type="hidden" name='redir' value='' />
                                                 <ul>
                                                         <li></li>
@@ -77,7 +77,7 @@
                                                                         <a class="no_under" href="javascript:document.getElementById('form_login').submit();" id="btnLogin">登录</a>
                                                                 </div>
                                                                 <div class="fl rg">
-                                                                        <a href="/user/register">立即注册</a>
+                                                                        <a href="/register">立即注册</a>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                         </li>

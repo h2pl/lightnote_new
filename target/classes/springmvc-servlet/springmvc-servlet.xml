@@ -26,7 +26,7 @@
 	<!--视图解析器： 定义视图的前缀后缀 -->
 	<bean id="resourceView" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-		<property name="prefix" value="/WEB-INF/page/"/>
+		<property name="prefix" value="/WEB-INF/jsp/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	

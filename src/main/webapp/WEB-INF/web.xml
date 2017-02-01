@@ -47,11 +47,9 @@
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
   </listener>
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>login.html</welcome-file>
-    <welcome-file>home.html</welcome-file>
-    <welcome-file>register.html</welcome-file>
-    <welcome-file>my.html</welcome-file>
+    
+    <welcome-file>login.jsp</welcome-file>
+  
     
   </welcome-file-list>
   <context-param>

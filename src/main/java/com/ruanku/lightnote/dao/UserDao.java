@@ -42,4 +42,10 @@ public interface UserDao {
      * 查询所有数据库记录
      */
 	List<User> findAll();
+	
+	/**
+     * 此方法根据用户名来查找用户 
+     * 查询对应用户的信息
+     */
+	User findUserByName(String username);
 }

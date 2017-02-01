@@ -1,3 +1,10 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.*" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    out.print(basePath);
+%>
 <!DOCTYPE HTML>
 <html>
         <head>
@@ -6,16 +13,16 @@
                 <meta name="keywords" content="thinkernore,行客记事,行客诺,记事本,笔记" />
                 <meta name="description" content="一款完全免费的记事本软件，方便你随时随地记录形式各样的资料，支持多种格式的附件" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <link rel="shortcut icon" href="static/images/favicon.ico" />
-                <link rel="stylesheet" type="text/css" href="static/css/css_v1/public.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/css_v1/register.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/pub/jquery-ui.css" />
-                <script src="static/js/pub/jquery.js"></script>
-                <script src="static/js/pub/jquery-ui.js"></script>
-                <script src="static/js/pub/jquery.cookie.js"></script>
-                <script src="static/js/register.plain.js"></script>
-                <script src="static/js/TNoteWeb.plain.js"></script>
-                <script src="static/js/headLogin.plain.js"></script>
+                <link rel="shortcut icon" href="<%=basePath%>images/favicon.ico" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/css_v1/public.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/css_v1/register.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/pub/jquery-ui.css" />
+                <script src="<%=basePath%>js/pub/jquery.js"></script>
+                <script src="<%=basePath%>js/pub/jquery-ui.js"></script>
+                <script src="<%=basePath%>js/pub/jquery.cookie.js"></script>
+                <script src="<%=basePath%>js/register.plain.js"></script>
+                <script src="<%=basePath%>js/TNoteWeb.plain.js"></script>
+                <script src="<%=basePath%>js/headLogin.plain.js"></script>
         </head>
         <body>
                 <!-- Google Code for &#27880;&#20876;&#39029;&#38754;&#36716;&#25442;&#36319;&#36394; Conversion Page -->
@@ -41,7 +48,7 @@
                         if(navigator.appName == "Microsoft Internet Explorer") {
                                 var vs=navigator.appVersion.split(";")[1].replace(/[ ]/g, "");
                                 if(vs== "MSIE6.0" ) {
-                                //      window.location = "static/ie.html";
+                                //      window.location = "<%=basePath%>ie.html";
                                 }
                         }
                         jQuery(document).ready(function(){
@@ -110,8 +117,8 @@
                                 <div class="top">
                                         <div class="left">
                                                 <a target="_blank" title="关注我们">关注我们</a>
-                                                <a href="http://t.qq.com/qingbiji-note"><img src="static/images/newNote_v1/qq.png" /></a>
-                                                <a href="http://e.weibo.com/qingbiji"><img src="static/images/newNote_v1/weibo.png" /></a>
+                                                <a href="http://t.qq.com/qingbiji-note"><img src="<%=basePath%>images/newNote_v1/qq.png" /></a>
+                                                <a href="http://e.weibo.com/qingbiji"><img src="<%=basePath%>images/newNote_v1/weibo.png" /></a>
                                                 <a target="_blank" href="/contact" title="联系我们">联系我们</a>
                                         </div>
                                         <div class="mid">
@@ -124,7 +131,7 @@
                                         </div>
                                         <div class="right">
                                                 <span>推荐使用 : </span>
-                                                <a target="_blank" href="http://chrome.360.cn/"><img src="static/images/index/new/16-16-icon.png">360极速浏览器</a>
+                                                <a target="_blank" href="http://chrome.360.cn/"><img src="<%=basePath%>images/index/new/16-16-icon.png">360极速浏览器</a>
                                         </div>
                                 </div>
                                 <div class="line center"></div>
