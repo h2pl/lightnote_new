@@ -77,7 +77,7 @@
                                                                         <a class="no_under" href="javascript:document.getElementById('form_login').submit();" id="btnLogin">登录</a>
                                                                 </div>
                                                                 <div class="fl rg">
-                                                                        <a href="/user/register">立即注册</a>
+                                                                        <a href="/lightnote/user/registerpage">立即注册</a>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                         </li>

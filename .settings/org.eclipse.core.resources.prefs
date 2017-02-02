@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/jsp/admin.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/error.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/home.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/login.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/register.jsp=UTF-8

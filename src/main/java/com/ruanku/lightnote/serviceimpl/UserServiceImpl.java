@@ -1,5 +1,7 @@
 package com.ruanku.lightnote.serviceimpl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -22,4 +24,26 @@ public class UserServiceImpl implements UserService {
         }
         return null;
     }
+
+	public boolean checkRegisterUsername(String username) {
+		// TODO Auto-generated method stub
+		User user = userDao.findUserByName(username);
+        if (user != null) {
+            return false;
+        }
+        
+		return true;
+	}
+	
+	public boolean checkRegisterEmail(String email) {
+		// TODO Auto-generated method stub
+		List<User> userlist=userDao.findAll();
+        for (User user2 : userlist) {
+			if(user2.getEmail().equals(email)){
+				return false;
+			}
+			
+		}
+        return true;
 }
+	}

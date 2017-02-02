@@ -80,7 +80,7 @@
                                         <div class="titleBar1 imgTitle">
                                                 <a>一个账号,多设备共享,永久免费!</a>
                                         </div>
-                                        <form class="center" id="form1" name="form1">
+                                        <form class="center" id="form1" name="form1" action="lightnote/user/register">
 
                                                 <ul class="usage">
                                                         <li><label id="registerInfo"></label></li>
@@ -101,7 +101,7 @@
                                                         </li>
                                                         <li class="liBtn">
                                                                 <div class="fr Button1 bt">
-                                                                        <!--a href="javascript:document.getElementById('form1').submit();">立即注册</a-->
+                                                                        <a href="javascript:document.getElementById('form1').submit();">立即注册</a>
                                                                         <a id="btn_register" class="no_under">立即注册</a>
                                                                 </div>
                                                                 <div class="clear"></div>

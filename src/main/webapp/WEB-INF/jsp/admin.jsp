@@ -4,6 +4,7 @@
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     out.print(basePath);
+    
 %>
 
 <html>
@@ -26,6 +27,7 @@
                 <script src="<%=basePath%>js/headLogin.plain.js"></script>
         </head>
         <body>
+        <p>${error}</p>
                 <script>
                         if(navigator.appName == "Microsoft Internet Explorer") {
                                 var vs=navigator.appVersion.split(";")[1].replace(/[ ]/g, "");
