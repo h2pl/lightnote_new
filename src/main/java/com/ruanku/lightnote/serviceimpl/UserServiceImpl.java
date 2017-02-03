@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.apache.coyote.http11.filters.VoidInputFilter;
 import org.springframework.stereotype.Service;
 
 import com.ruanku.lightnote.dao.UserDao;
@@ -45,5 +46,10 @@ public class UserServiceImpl implements UserService {
 			
 		}
         return true;
-}
+    }
+	
+	public void addUser(User user){
+		userDao.add(user);
+		
 	}
+}

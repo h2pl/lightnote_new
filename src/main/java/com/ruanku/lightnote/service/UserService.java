@@ -9,4 +9,6 @@ public interface UserService {
 	public boolean checkRegisterUsername(String username);
 	
 	public boolean checkRegisterEmail(String email);
+	
+	public void addUser(User user);
 }

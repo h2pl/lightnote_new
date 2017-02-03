@@ -80,31 +80,24 @@
                                         <div class="titleBar1 imgTitle">
                                                 <a>一个账号,多设备共享,永久免费!</a>
                                         </div>
-                                        <form class="center" id="form1" name="form1" action="lightnote/user/register">
+                                        <form class="center" id="form1" name="form1" action="/lightnote/user/register" onsubmit="return check_form()">
 
                                                 <ul class="usage">
                                                         <li><label id="registerInfo"></label></li>
+                                                        <li><span>用户名</span><input type="text" id="username" name="username" class="ipt field" maxlength="50"/><label></label></li>
                                                         <li><span>注册邮箱</span><input type="text" id="email" name="email" class="ipt field" maxlength="50"/><label></label></li>
-                                                        <li><span>用户密码</span><input type="password" id="pass" name="pass" class="ipt field" for="password"/><label></label></li>
-                                                        <li><span>确认密码</span><input type="password" id="pass2" name="pass2" class="ipt field "/><label></label></li>
-                                                        <li><span>验证码</span>
-                                                                <input type="text" id="verifyCode" name="vcode" class="ipt ipt-vcode field" />
-                                                                <img src="/vcode?t=640974112" id="vcodeimage" alt="code" />
-                                                                <a id="vcodelink" class="hand">换一张</a>
-                                                                <br/>
-                                                                <label>
-                                                                </label>
+                                                        <li><span>用户密码</span><input type="password" id="password" name="password" class="ipt field" /><label></label></li>
+                                                        <li><span>确认密码</span><input type="password" id="password2" name="password2" class="ipt field "/><label></label></li>
+                                                        <li><span >提示信息</span>
+                                                       
                                                         </li>
-                                                        <li class="agreement">
-                                                                <input id="agreement" name="agreement" checked="checked" type="checkbox"/>
-                                                                <label for="agreement">同意轻笔记《<a href="/tos" target="_blank">服务条款</a>》</label>
-                                                        </li>
-                                                        <li class="liBtn">
-                                                                <div class="fr Button1 bt">
-                                                                        <a href="javascript:document.getElementById('form1').submit();">立即注册</a>
-                                                                        <a id="btn_register" class="no_under">立即注册</a>
+                                                        <li id="tipmsg"></li>
+                                                        <li >
+                                                                <div align="right">
+                                                                       <!--a <a href="javascript:document.getElementById('form1').submit();">立即注册</a>-->
+                                                                        <input type="submit" id="btn_register" value="立即注册" class="no_under">
                                                                 </div>
-                                                                <div class="clear"></div>
+                                                            
                                                         </li>
                                                 </ul>
                                         </form>

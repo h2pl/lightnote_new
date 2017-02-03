@@ -1,9 +1,27 @@
+<%@page import="com.ruanku.lightnote.pojo.User"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     out.print(basePath);
+    
+    User user=null;
+    if(session.getAttribute("user")!=null){
+    user=(User)session.getAttribute("user");
+    }
+    
+    String username=null;
+    String email=null;
+  
+    if(user!=null){
+     username=user.getUsername();
+     email=user.getEmail();
+    }
+    
+    out.print(username);
+    
 %>
 
 <html lang="zh-CN">
@@ -14,6 +32,7 @@
                 <meta name="description" content="一款完全免费的记事本软件，方便您随时随地记录形式各样的资料，支持多种格式的附件" />
                 <link rel="shortcut icon" href="<%=basePath%>images/favicon.ico" />
                 <link rel="stylesheet" type="text/css" href="<%=basePath%>css/bootstrap.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/bootstrap.min.css" />
                 <link rel="stylesheet" type="text/css" href="<%=basePath%>css/template.css" />
                 <link rel="stylesheet" type="text/css" href="<%=basePath%>css/pageAlert.css" />
                 <link rel="stylesheet" type="text/css" href="<%=basePath%>css/pub/jquery-ui.css" />
@@ -42,9 +61,22 @@
                                         <li id="publicNote"><a href="/public" target="_blank">大家的公开</a></li>
                                 </ul>
                                 <ul class="nav info-ul">
-                                        <li><a href="/people/362294931@qq.com" class="textOver" target="_black">您好 362294931@qq.com</a></li>
-                                        <li> <a href="/logout" title="退出">退出</a> </li>
-                                </ul>
+                                
+                <c:choose>
+                    <c:when test="${username!=null}">
+                        <li><a class="mdl-navigation__link mdl-color-text--pink-400"
+                           href="/user/listUserInfo?username=${username}">${username}</a></li>
+                        
+                        <li><a class="mdl-navigation__link mdl-color-text--black" href="/lightnote/user/logout">注销</a></li>
+                    </c:when>
+                    <c:when test="${username == null}">
+                        <li><a class="mdl-navigation__link mdl-color-text--pink-400" href="http://localhost:8080/lightnote/index.jsp">登录</a></li>
+                       <li> <a class="mdl-navigation__link mdl-color-text--pink-400" href="http://localhost:8080/lightnote/register.jsp">注册</a></li>
+                    </c:when>
+                </c:choose>
+          
+                                
+                            </ul>
                         </div>
                         
                 </div>
