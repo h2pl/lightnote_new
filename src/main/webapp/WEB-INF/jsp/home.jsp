@@ -1,7 +1,9 @@
 <%@page import="com.ruanku.lightnote.pojo.User"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:set var="ctx" value="${pageContext.request.contextPath }"></c:set>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -47,6 +49,7 @@
 
         </head>
         <body>
+        <p>${ctx}</p>
                 <input id="defaultSort" value="title" type="hidden" />
                 <input id="userName" value="362294931@qq.com" type="hidden" />
                 <input type="hidden" id="userId" value="40699812"  />
@@ -65,7 +68,7 @@
                 <c:choose>
                     <c:when test="${username!=null}">
                         <li><a class="mdl-navigation__link mdl-color-text--pink-400"
-                           href="/user/listUserInfo?username=${username}">${username}</a></li>
+                           href="/lightnote/user/userinfo?username=${username}">${username}</a></li>
                         
                         <li><a class="mdl-navigation__link mdl-color-text--black" href="/lightnote/user/logout">注销</a></li>
                     </c:when>

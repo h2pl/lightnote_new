@@ -7,6 +7,11 @@ public class User {
 	private String password;
 	private String email;
 	
+	private long totalspace;
+	private long usedspace;
+	private long contribution;
+	private String invitecode;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -31,6 +36,38 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public long getTotalspace() {
+		return totalspace;
+	}
+	public void setTotalspace(long totalspace) {
+		this.totalspace = totalspace;
+	}
+	public long getUsedspace() {
+		return usedspace;
+	}
+	public void setUsedspace(long usedspace) {
+		this.usedspace = usedspace;
+	}
+	public long getContribution() {
+		return contribution;
+	}
+	public void setContribution(long contribution) {
+		this.contribution = contribution;
+	}
+	public String getInvitecode() {
+		return invitecode;
+	}
+	public void setInvitecode(String invitecode) {
+		this.invitecode = invitecode;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", email=" + email
+				+ ", totalspace=" + totalspace + ", usedspace=" + usedspace + ", contribution=" + contribution
+				+ ", invitecode=" + invitecode + "]";
+	}
+	
+	
 	
 	
 }

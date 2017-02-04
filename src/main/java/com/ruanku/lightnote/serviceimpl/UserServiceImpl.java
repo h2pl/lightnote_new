@@ -52,4 +52,9 @@ public class UserServiceImpl implements UserService {
 		userDao.add(user);
 		
 	}
+
+	public User findUserByName(String username) {
+		// TODO Auto-generated method stub
+		return userDao.findUserByName(username);
+	}
 }

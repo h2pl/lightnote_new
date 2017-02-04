@@ -11,4 +11,6 @@ public interface UserService {
 	public boolean checkRegisterEmail(String email);
 	
 	public void addUser(User user);
+	
+	public User findUserByName(String username);
 }

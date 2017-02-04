@@ -9,6 +9,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ruanku.lightnote.pojo.User;
 import com.ruanku.lightnote.service.UserService;
@@ -56,6 +57,18 @@ public class UserController {
 	    @RequestMapping("home")
 	    public String home() {
 	      return "home";
+	    }
+	    
+	    @RequestMapping("/userinfo")
+	    public String userinfo(@Param("username") String username,HttpServletRequest request) {
+	        request.setAttribute("username", username);
+	    	return "userinfo";
+	    }
+	    
+	    @RequestMapping("/getuser")
+	    public @ResponseBody User getUser(@Param("username") String username) {
+	      User user =userService.findUserByName(username);
+	      return user;
 	    }
 	    
 	    @RequestMapping("register")
