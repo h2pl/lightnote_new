@@ -49,29 +49,12 @@ public class UserController {
 	    }
 	   
 	    
-	    @RequestMapping("registerpage")
+	    @RequestMapping("/registerpage")
 	    public String registerpage() {
 	      return "register";
 	    }
 	    
-	    @RequestMapping("home")
-	    public String home() {
-	      return "home";
-	    }
-	    
-	    @RequestMapping("/userinfo")
-	    public String userinfo(@Param("username") String username,HttpServletRequest request) {
-	        request.setAttribute("username", username);
-	    	return "userinfo";
-	    }
-	    
-	    @RequestMapping("/getuser")
-	    public @ResponseBody User getUser(@Param("username") String username) {
-	      User user =userService.findUserByName(username);
-	      return user;
-	    }
-	    
-	    @RequestMapping("register")
+	    @RequestMapping("/register")
 	    public String register(@Param("username") String username,
 	    		@Param("password") String password,
 	    		@Param("email") String email,
@@ -99,7 +82,52 @@ public class UserController {
     	  
     	  }
 	      return "home";
-	     
+	      
 	      
 	    }
+	    
+	    @RequestMapping("/home")
+	    public String home() {
+	      return "home";
+	    }
+	    
+	    @RequestMapping("/mynote")
+	    public String mynote(@Param("username")String username,HttpServletRequest request) {
+		      return "mynote";
+		}
+	    
+	    @RequestMapping("/category")
+	    public String category(@Param("username")String username,HttpServletRequest request) {
+		      return "category";
+		    }
+	    
+	    @RequestMapping("/group")
+	    public String group(@Param("username")String username,HttpServletRequest request) {
+	    	
+	    	//request.setAttribute("group", group);  
+	    	return "group";
+		    }
+	    
+	    
+	    @RequestMapping("/editnote")
+	    public String userinfo(@Param("noteid") long noteid,HttpServletRequest request) {
+	        request.setAttribute("noteid", noteid);
+	    	return "editnote";
+	    }
+	    
+	    @RequestMapping("/userinfo")
+	    public String userinfo(@Param("username") String username,HttpServletRequest request) {
+	        request.setAttribute("username", username);
+	    	return "userinfo";
+	    }
+	    
+	    @RequestMapping("/getuser")
+	    public @ResponseBody User getUser(@Param("username") String username) {
+	      User user =userService.findUserByName(username);
+	      return user;
+	    }
+	    
+	    
+	   
+	    
 }

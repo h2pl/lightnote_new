@@ -1,3 +1,12 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.*" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    out.print(basePath);
+    
+    
+%>
 <!DOCTYPE HTML>
 <html lang="zh-CN">
         <head>
@@ -6,13 +15,13 @@
                 <meta name="keywords" content="thinkernore,轻笔记,行客诺,记事本,笔记" />
                 <meta name="description" content="一款完全免费的记事本软件，方便您随时随地记录形式各样的资料，支持多种格式的附件" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <link rel="shortcut icon" href="static/images/favicon.ico" />
-                <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/pub/jquery-ui.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/template.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/pageAlert.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/folder.css" />
-                <link rel="stylesheet" type="text/css" href="static/css/folderTree.css" />
+                <link rel="shortcut icon" href="<%=basePath%>images/favicon.ico" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/bootstrap.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/pub/jquery-ui.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/template.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/pageAlert.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/folder.css" />
+                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/folderTree.css" />
         </head>
         <body>
                 <input id="defaultSort" value="title" type="hidden" />
@@ -27,7 +36,7 @@
                 </div-->
                 <div id="" class="page-header">
                         <div id="hdContent" class="navbar container">
-                                <a href="/"><img alt="轻笔记Logo" title="到轻笔记官网首页." id="logoImg" class="brand" src="static/images/home/logo.png"/></a>
+                                <a href="/"><img alt="轻笔记Logo" title="到轻笔记官网首页." id="logoImg" class="brand" src="<%=basePath%>images/home/logo.png"/></a>
                                 <ul id="UL_Nav" class="nav page-nav">
                                         <li id="overview"><a href="/home">概览</a></li>
                                         <li id="person"><a href="/myNote">我的笔记</a></li>
@@ -56,16 +65,16 @@
                         </div>
                 </div>
                 
-        <script src="static/js/pub/jquery.js"></script>
-        <script src="static/js/pub/jquery-ui.js"></script>
-        <script src="static/js/tiny_mce/tiny_mce.js"></script>
-        <script src="static/js/pub/fileuploader.js" type="text/javascript"></script>
-        <script src="static/js/TNoteWeb.plain.js"></script>
-        <script src="static/js/addMember.plain.js"></script>
-        <script src="static/js/TN.plain.js"></script>
-        <script src="static/js/emailshare.plain.js" type="text/javascript"></script>
-        <script src="static/js/folder_01.plain.js"></script>
-        <script src="static/js/group.plain.js"></script>
-        <script src="static/js/folderTree.plain.js"></script>
+        <script src="<%=basePath%>js/pub/jquery.js"></script>
+        <script src="<%=basePath%>js/pub/jquery-ui.js"></script>
+        <script src="<%=basePath%>js/tiny_mce/tiny_mce.js"></script>
+        <script src="<%=basePath%>js/pub/fileuploader.js" type="text/javascript"></script>
+        <script src="<%=basePath%>js/TNoteWeb.plain.js"></script>
+        <script src="<%=basePath%>js/addMember.plain.js"></script>
+        <script src="<%=basePath%>js/TN.plain.js"></script>
+        <script src="<%=basePath%>js/emailshare.plain.js" type="text/javascript"></script>
+        <script src="<%=basePath%>js/folder_01.plain.js"></script>
+        <script src="<%=basePath%>js/group.plain.js"></script>
+        <script src="<%=basePath%>js/folderTree.plain.js"></script>
 </body>
 </html>

@@ -1,6 +1,10 @@
 eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/jsp/admin.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/category.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/editnote.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/error.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/group.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/home.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/mynote.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/userinfo.jsp=UTF-8
 encoding//src/main/webapp/register.jsp=UTF-8

@@ -45,33 +45,15 @@
                                 1 == "1" ? jQuery("#accept").attr("checked", "true") : jQuery("#accept").removeAttr("checked");
                         });
                 </script>
-<script type="text/javascript">
-$(function(){
-	$.ajax({
-		type: "GET",
-        url: <%=basePath%>+"user/getuser?username=${username}",
-        success: function(data){
-        	var body ="";
-        	var td = "<td><a href=<%=basePath%>+'user/addLoad'>增加</a> <a href='${ctx}/user/editLoad?id=${user.id}'>修改</a>   <a href='${ctx}/user/delete?id=${user.id}'>删除</a> </td>"
-        	        		
-        			body  = body   + "<td>"+data+"</td>" ; 
-        		
-        		body  =    body + td + "</tr>";   
-        	}
-        	$("#tab tbody").append(body); 
-        }
-	});
-});
 
-</script>
         </head>
         <body>
                 <div id="" class="page-header">
                         <div id="hdContent" class="navbar container">
                                 <a href="/"><img alt="轻笔记Logo" title="到轻笔记官网首页." id="logoImg" class="brand" src="<%=basePath%>images/home/logo.png"/></a>
                                         <ul class="nav info-ul">
-                                                <li><a href="/home" title="返回笔记">返回笔记</a></li>
-                                                <li><a href="/logout" title="退出">退出</a></li>
+                                                <li><a href="/lightnote/user/home" title="返回笔记">返回笔记</a></li>
+                                                <li><a href="/lightnote/user/logout" title="退出">退出</a></li>
                                         </ul>
                         </div>
                 </div>
@@ -138,7 +120,7 @@ $(function(){
   			<th>功能</th>
   		</tr>
   		 
- 	 <c:forEach items="${userList}"  var="user">
+ 	 
      	<tr>
   			<td>${user.id}</td>
   			<td>${user.username}</td>
@@ -146,7 +128,7 @@ $(function(){
   			<td>${user.email}</td>
   			<td><a href="${ctx}/user/addLoad">增加</a> <a href="${ctx}/user/editLoad?id=${user.id}">修改</a>   <a href="${ctx}/user/delete?id=${user.id}">删除</a> </td>
   		</tr>
-     </c:forEach> 
+     
 
   	</table>
     

@@ -57,11 +57,11 @@
                         <div id="hdContent" class="navbar container">
                                 <a href="/"><img alt="轻笔记Logo" title="到轻笔记官网首页." id="logoImg" class="brand" src="<%=basePath%>images/home/logo.png"/></a>
                                 <ul id="UL_Nav" class="nav page-nav">
-                                        <li id="overview" class="activ"><a href="/home">概览</a></li>
-                                        <li id="person1"><a href="/myNote">我的笔记</a></li>
-                                        <li id="person"><a href="/my">分类整理</a></li>
-                                        <li id="project"><a href="/group">群组合作</a></li>
-                                        <li id="publicNote"><a href="/public" target="_blank">大家的公开</a></li>
+                                        <li id="overview" class="activ"><a href="/lightnote/user/home">概览</a></li>
+                                        <li id="person1"><a href="/lightnote/user/mynote">我的笔记</a></li>
+                                        <li id="person"><a href="/lightnote/user/category">分类整理</a></li>
+                                        <li id="project"><a href="/lightnote/user/group">群组合作</a></li>
+                                        
                                 </ul>
                                 <ul class="nav info-ul">
                                 
