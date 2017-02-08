@@ -1,0 +1,220 @@
+*{font-size:12px;}
+.contentBox{
+	padding-top:40px;
+	padding-bottom:48px;
+	height:auto;
+}
+.contentBox .imgSlider{
+	width:682px;
+	height:366px;
+	overflow:hidden;
+	background:url("../../images/newNote_v1/bg7_6.png");
+}
+
+.imgSlider .imgSlider-content{
+	width:670px;
+	height:341px;
+	overflow:hidden;
+	margin:6px auto;
+	border:1px solid #ccc;
+	background:white;
+}
+.imgSlider .imgSlider-img{
+	width:100%;
+	height:100%;
+}
+.imgSlider .imgSlider-intro{
+	width:668px;
+	height:45px;
+	margin-left:1px;
+	position:relative;
+	bottom:46px;
+}
+
+.account{
+	width:270px;
+}
+.account .reg-bd{
+	width:100%;
+	height:96px;
+	overflow:hidden;
+	background:url("../../images/newNote_v1/bg7_6_2.png");
+}
+.account .reg{
+	width:252px;
+	height:79px;
+	margin:8px auto;
+}
+.account .reg a{
+	line-height:79px;
+	font-size:24px;
+	text-decoration:none;
+	font-family:"å¾®è½¯é›…é»‘",Arial;
+	font-weight:800;
+}
+.login{
+	margin-top:15px;
+}
+.login .ipt{
+	width:235px;
+	height:43px;
+	line-height:43px;
+	margin-top:2px;
+	border:1px solid #959595;
+}
+.login .liMid{
+	text-align:left;
+	padding-left:18px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.login .liMid a{
+	margin-left:80px;
+}
+.login .liBtn{
+	width:270px;
+	height:61px;
+	margin-left:-3px;
+	background:url("../../images/newNote_v1/login7_6_2.png");
+}
+.login ul li{
+	list-style:none;
+	margin-left:15px;
+}
+.login .liBtn input{
+	width:254px;
+	height:45px;
+	margin:8px;
+}
+.login p{
+	margin-left:10px;
+	margin-top:10px;
+}
+.login .login-info{
+	width:100%;
+	height:173px;
+	margin-bottom:15px;
+	background-color:#ccc;
+}
+.login .login-info p{
+	margin-left:0px;
+	position:relative;
+	top:80px;
+	text-align:center;
+}
+.login a{
+	color:#2b75b4;
+}
+/*
+.sina,.qq,.qihu,.baidu,.renren{
+	display:inline-block;
+	height:18px;
+	padding-left:17px;
+	margin-left:3px;
+	background-position:0px 0px;
+}
+.sina{background:url("../../images/newNote_v1/sina.png") no-repeat;}
+.qq{background:url("../../images/newNote_v1/qqsmall.png") no-repeat;}
+.qihu{background:url("../../images/newNote_v1/360.png") no-repeat;}
+.baidu{background:url("../../images/newNote_v1/baidu.png") no-repeat;}
+.renren{background:url("../../images/newNote_v1/renren.png") no-repeat;}
+*/
+
+.downList{
+	border:1px solid black;
+	overflow:hidden;
+	margin-top:30px;
+	width:100%;
+	height:66px;
+	background:-webkit-linear-gradient(top,#707070,#393939);
+	background:-moz-linear-gradient(top,#707070,#393939);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#707070',endColorStr='#393939',gradientType='0');
+	background:-ms-linear-gradient(top,#707070,#393939);
+}
+.downList ul{
+	height:100%;
+}
+.downList ul li{
+	border-top:1px solid #a4a4a4;
+	float:left;
+	height:100%;
+	width:25%;
+}
+.downList ul li:hover{
+	border-top:1px solid black;
+	background:url("../../images/newNote_v1/choose.jpg") 0px 0px;
+}
+.ios,.android,.windows,.more{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.ios{
+	background:url("../../images/newNote_v1/ios_download.png");
+}
+.android{
+	background:url("../../images/newNote_v1/android_download.png");
+}
+.windows{
+	background:url("../../images/newNote_v1/PC_download.png");
+}
+.more{
+	background:url("../../images/newNote_v1/morechoose.png");
+}
+
+
+.intro{
+	margin-top:35px;
+	height:158px;
+	overflow:hidden;
+}
+.intro .box{
+	float:left;
+	width:184px;
+	height:148px;
+	margin-right:6px;
+	overflow:hidden;
+	border-radius:3px;
+	border:1px solid #fff;
+}
+.intro .box .text{
+	padding:9px;
+	color:white;
+	width:170px;
+	height:100%;
+	margin-top:214px;
+	filter:alpha(opacity=90);
+	opacity:0.9;
+}
+.intro .box .title{
+	height:30px;
+	
+}
+/*class rc æ„æ€æ˜¯æŠŠmargin-right:0pxå–æ¶ˆå³è¾¹çš„margin*/
+.intro .rc{
+	margin-right:0px;
+}
+
+.friendLogo{width:100%;text-align:center;margin-top:30px;}
+.friendLogo li{float:left;width:16.6%;}
+
+/*
+ *
+ * img background
+ * å›¾ç‰‡åŒ—äº¬
+ */
+.b1{
+	background:url("../../images/newNote_v1/3g.jpg");
+}
+.b2{
+	background:url("../../images/newNote_v1/grtoup.jpg");
+}
+.b3{
+	background:url("../../images/newNote_v1/High performance.jpg");
+}
+.b4{
+	background:url("../../images/newNote_v1/sound.jpg");
+}
+.b5{
+	background:url("../../images/newNote_v1/safe.jpg");
+}

@@ -44,13 +44,13 @@
 	width:40px;
 	height:40px;
 	overflow:hidden;
-	background:url("/static/images/index/gailan/download_android3.png") no-repeat 0px -40px;
+	background:url("../images/index/gailan/download_android3.png") no-repeat 0px -40px;
 	display:block;
 }
 .d1:hover .dwn1{
 	background-position:0px 0px;
 }
-.dwn2{width:40px;height:40px;background:url("/static/images/index/gailan/download_apple3.png") no-repeat 0px -40px;display:block;}
+.dwn2{width:40px;height:40px;background:url("../images/index/gailan/download_apple3.png") no-repeat 0px -40px;display:block;}
 .d2:hover .dwn2{background-position:0px 0px;}
-.dwn3{width:40px;height:40px;background:url("/static/images/index/gailan/download_pc3.png") no-repeat 0px -40px;display:block;}
+.dwn3{width:40px;height:40px;background:url("../images/index/gailan/download_pc3.png") no-repeat 0px -40px;display:block;}
 .d3:hover .dwn3{background-position:0px 0px;}

@@ -73,7 +73,7 @@
                         <li><a class="mdl-navigation__link mdl-color-text--black" href="/lightnote/user/logout">注销</a></li>
                     </c:when>
                     <c:when test="${username == null}">
-                        <li><a class="mdl-navigation__link mdl-color-text--pink-400" href="http://localhost:8080/lightnote/index.jsp">登录</a></li>
+                        <li><a class="mdl-navigation__link mdl-color-text--pink-400" href="http://localhost:8080/lightnote/login.jsp">登录</a></li>
                        <li> <a class="mdl-navigation__link mdl-color-text--pink-400" href="http://localhost:8080/lightnote/register.jsp">注册</a></li>
                     </c:when>
                 </c:choose>

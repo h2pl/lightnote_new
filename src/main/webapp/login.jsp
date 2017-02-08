@@ -4,7 +4,6 @@
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     out.print(basePath);
-    
 %>
 
 <html>
@@ -27,7 +26,6 @@
                 <script src="<%=basePath%>js/headLogin.plain.js"></script>
         </head>
         <body>
-        <p>${error}</p>
                 <script>
                         if(navigator.appName == "Microsoft Internet Explorer") {
                                 var vs=navigator.appVersion.split(";")[1].replace(/[ ]/g, "");
@@ -60,7 +58,7 @@
                                         <div class="titleBar1 imgTitle">
                                                 <a>登录并开始记录</a>
                                         </div>
-                                        <form class="center" id="form_login" method="post" action="/login">
+                                        <form class="center" id="form_login" method="post" action="/lightnote/user/login">
                                                 <input type="hidden" name='redir' value='' />
                                                 <ul>
                                                         <li></li>
@@ -79,7 +77,7 @@
                                                                         <a class="no_under" href="javascript:document.getElementById('form_login').submit();" id="btnLogin">登录</a>
                                                                 </div>
                                                                 <div class="fl rg">
-                                                                        <a href="/register">立即注册</a>
+                                                                        <a href="http://localhost:8080/lightnote/register.jsp">立即注册</a>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                         </li>
