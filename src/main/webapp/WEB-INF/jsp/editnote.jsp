@@ -1,30 +1,36 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
+<%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-    out.print(basePath);
+    out.print(basePath+"11");
     
     
 %>
 <!DOCTYPE html>
 <html lang="zh-CN">
         <head>
+           <base href="<%=basePath%>">
                 <meta charset="utf-8" />
                 <title id="tt">编辑笔记-未命名 @轻笔记</title>
                 <meta name="keywords" content="thinkernore,轻笔记,行客诺,记事本,笔记" />
                 <meta name="description" content="一款完全免费的记事本软件，方便您随时随地记录形式各样的资料，支持多种格式的附件" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <link rel="shortcut icon" href="<%=basePath%>images/favicon.ico" />
-                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/bootstrap.css" />
-                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/template.css" />
-                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/note.css" />
-                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/pub/jquery-ui.css" />
-                <link rel="stylesheet" type="text/css" href="<%=basePath%>css/fileuploader.css" />
-                <script src="<%=basePath%>js/pub/jquery.js"></script>
-                <script src="<%=basePath%>js/pub/jquery-ui.js"></script> 
-                <script src="<%=basePath%>js/tiny_mce/tiny_mce.js"></script>
-                <script src="<%=basePath%>js/pub/fileuploader.js" type="text/javascript"></script>
+                <link rel="shortcut icon" href="images/favicon.ico" />
+                <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+                <link rel="stylesheet" type="text/css" href="css/template.css" />
+                <link rel="stylesheet" type="text/css" href="css/note.css" />
+                <link rel="stylesheet" type="text/css" href="css/pub/jquery-ui.css" />
+                <link rel="stylesheet" type="text/css" href="css/fileuploader.css" />
+                
+                <script src="js/pub/jquery.js"></script>
+                <script src="js/pub/jquery-ui.js"></script> 
+                <script src="js/tiny_mce/tiny_mce.js"></script>
+                <script src="js/pub/fileuploader.js" type="text/javascript"></script>
+                 <SCRIPT type=text/javascript src="ueditor/ueditor.config.js"></SCRIPT>  
+	<SCRIPT type=text/javascript src="ueditor/ueditor.all.js"></SCRIPT>
+        
         </head>
         <body>
                 <input type="hidden" id="serverTime" name="serverTime" value="1484141549"/>
@@ -59,10 +65,24 @@
                         <h3 class="noteTitle textOver" title="点击修改标题"><a id="title">未命名</a></h3>
                         <div id="alertDiv" class="alertDiv"></div>
                         <div class="tinyDiv">
-                                <textarea id="tinyArea" style="visibility:hidden;width:100%;float:left;"></textarea>
+                                  <form action="save.jsp" method="post">
+	    <TEXTAREA id=myEditor name="mycontent"></TEXTAREA>  
+		<SCRIPT type=text/javascript>  
+		    var editor = new UE.ui.Editor();  
+		    editor.render("myEditor");  
+		    //1.2.4以后可以使用一下代码实例化编辑器 
+		    //UE.getEditor('myEditor') 
+		</SCRIPT>
+		<input name="submit" value="提交" type="submit">
+	</form> 
                         </div>
+                        
+                  
+                       
+                 
                 </div>
-                
+
+	
                 <div id="attList" class="container"></div>
                 <!--
                 <div id="footer">

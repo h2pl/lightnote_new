@@ -3,8 +3,8 @@
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-    out.print(basePath);
     
+    out.print(basePath);
     
 %>
 <!DOCTYPE HTML>
@@ -29,15 +29,15 @@
                         <div id="hdContent" class="navbar container">
                                 <a href="/"><img alt="轻笔记Logo" title="到轻笔记官网首页." id="logoImg" style="margin-left:-20px;" class="brand" src="<%=basePath%>images/home/logo.png"/></a>
                                 <ul id="UL_Nav" class="nav page-nav">
-                                        <li id="overview"><a href="/home">概览</a></li>
-                                        <li id="person" class="activ"><a href="/myNote">我的笔记</a></li>
-                                        <li id="person2"><a href="/my">分类整理</a></li>
-                                        <li id="project"><a href="/group">群组合作</a></li>
-                                        <li id="publicNote"><a href="/public" target="_blank">大家的公开</a></li>
+                                        <li id="overview"><a href="#">概览</a></li>
+                                        <li id="person" class="activ"><a href="/lightnote/user/mynote">我的笔记</a></li>
+                                        <li id="person2"><a href="/lightnote/user/category">分类整理</a></li>
+                                        <li id="project"><a href="/lightnote/user/group">群组合作</a></li>
+                                       
                                 </ul>
                                 <ul class="nav info-ul">
                                         <li><a href="/people/362294931@qq.com" class="textOver" target="_black">您好 362294931@qq.com</a></li>
-                                        <li><a href="/profile" title="用户设置">用户设置</a></li>
+                                        <li><a href="/lightnote/user/profile" title="用户设置">用户设置</a></li>
                                         <li><a href="/logout" title="退出" >退出</a> </li>
                                 </ul>
                         </div>

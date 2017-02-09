@@ -23,6 +23,36 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:/spring-mybatis/spring-mybatis.xml</param-value>
   </context-param>
+  
+  
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.css</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.gif</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.js</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>  
+    <servlet-name>default</servlet-name>  
+    <url-pattern>*.html</url-pattern>  
+</servlet-mapping>  
+
+
   <servlet>
     <servlet-name>springmvc</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -36,6 +66,7 @@
     <servlet-name>springmvc</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
   
    
     
@@ -49,6 +80,7 @@
   <welcome-file-list>
      <welcome-file>index.jsp</welcome-file>
     <welcome-file>login.jsp</welcome-file>
+     <welcome-file>ueditor.jsp</welcome-file>
   
     
   </welcome-file-list>

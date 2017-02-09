@@ -292,7 +292,7 @@ Qingbiji.myNote=window.Qingbiji.myNote||(function(){
 	}
 
 	function getAddNoteButton(){
-		var UIBody=$("<a/>",{"class":"myNoteBox newNoteButton","href":"/editnote?f=000","target":"_blank"});	
+		var UIBody=$("<a/>",{"class":"myNoteBox newNoteButton","href":"/lightnote/user/editnote?noteid=1","target":"_blank"});	
 		return UIBody;
 	}
 
